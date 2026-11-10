@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use these results or this code, please cite it as below."
+title: "rankin-selberg-delta: the Rankin-Selberg method for level-one cusp forms in Lean 4, from the modular discriminant to the explicit formula of L(Delta x Delta-bar)"
+abstract: >-
+  A Lean 4 formalisation, built on Mathlib, of the Rankin-Selberg method for level-one cusp forms and
+  its consequences for the modular discriminant Delta. (1) The Rankin-Selberg Dirichlet series
+  D(w) = sum |a(n)|^2 n^{-w} of a nonzero level-one cusp form has a simple pole with positive residue,
+  through real-analytic Eisenstein series and unfolding; and L(Delta, 1 + it) is nonzero for real t != 0.
+  (2) A de la Vallee Poussin zero-free region for the Rankin-Selberg square
+  G(s) = zeta(2s) D(s + 11) of Delta. (3) The Weil explicit formula for G, for smooth compactly
+  supported test functions, with the zero count N_G(T) = O(T log T). Every theorem depends only on
+  the standard axioms. Unrefereed; produced autonomously by AI agents running inside a custom research harness.
+type: software
+authors:
+  - name: "Nozero Day"
+version: "0.1.0"
+date-released: "2026-11-10"
+license: MIT
+keywords:
+  - Rankin-Selberg method
+  - modular discriminant
+  - Ramanujan tau function
+  - zero-free region
+  - explicit formula
+  - Lean 4

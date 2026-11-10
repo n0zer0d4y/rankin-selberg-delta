@@ -1,0 +1,32 @@
+# Settings for the interactive proof map, proofmap.html (https://github.com/n0zer0d4y/proofmap).
+# Regenerate it with `proofmap build` in this folder.
+
+[project]
+title = "The Rankin–Selberg method for level-one cusp forms: the Lean library"
+
+# The main results the page opens on: the theorems behind the "proved" claims in the three
+# papers/*/claims.md files. Their supporting lemmas and the *_hyps_satisfiable witnesses stay on
+# the page, below them.
+roots = [
+  # Result 1, claim 1: the simple pole of D(w) = sum |a(n)|^2 n^(-w) at w = k, with positive residue
+  "RankinSelbergDelta.RankinSelberg.rsD_simplePole",
+  # Result 1, claim 2: the continuation of G(s) = zeta(2s) D(s + k - 1) to 0 < Re s < 9/4
+  "RankinSelbergDelta.RankinSelberg.rsD_continuation",
+  # Result 1, claim 4: the discriminant is a Hecke eigenform
+  "RankinSelbergDelta.Hecke.heckeT_Delta_eq_smul",
+  # Result 1, claim 5: G(1 + iy) != 0
+  "RankinSelbergDelta.RankinSelberg.rs_square_ne_zero",
+  # Result 1, claim 6: L(f, 1 + it) != 0 for a Hecke eigenform with real coefficients
+  "RankinSelbergDelta.RankinSelberg.Lfunction_ne_zero_on_one_line",
+  # Result 1, claims 3 and 7: the pole and the edge nonvanishing for the discriminant
+  "RankinSelbergDelta.Delta.rankinSelberg_pole_Delta",
+  "RankinSelbergDelta.Hecke.Lfunction_ne_zero_Delta",
+  # Result 2: the de la Vallee Poussin zero-free region for G, general and for the discriminant
+  "RankinSelbergDelta.RankinSelberg.rs_zero_free_region",
+  "RankinSelbergDelta.Delta.zero_free_region_Delta",
+  # Result 3: the zero count and the explicit formula as a series over all zeros
+  "RankinSelbergDelta.RankinSelberg.exists_wcount_zeros_rsHent_le_mul_log",
+  "RankinSelbergDelta.RankinSelberg.explicitFormula_Gfull_tsum",
+  "RankinSelbergDelta.RankinSelberg.explicitFormula_Gfull_tsum_of_smooth",
+  "RankinSelbergDelta.Delta.explicit_formula_Delta",
+]
